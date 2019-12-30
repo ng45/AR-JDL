@@ -49,10 +49,11 @@ function initialize()
 		precision: 'lowp'
 	});
 	renderer.setClearColor(new THREE.Color('white'), 0)
-	renderer.setSize( 640, 480 );
+	//renderer.setSize( 640, 480 );
+    renderer.setSize( window.innerWidth, window.innerHeight );
 	renderer.domElement.style.position = 'absolute'
-	renderer.domElement.style.top = '0px'
-	renderer.domElement.style.left = '0px'
+	//renderer.domElement.style.top = '0px'
+	//renderer.domElement.style.left = '0px'
 	document.body.appendChild( renderer.domElement );
 	clock = new THREE.Clock();
 	deltaTime = 0;
